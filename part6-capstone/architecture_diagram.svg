@@ -1,0 +1,143 @@
+<svg width="1200" height="900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="600" y="30" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">
+    Hospital AI-Powered Data System Architecture
+  </text>
+  
+  <!-- Data Sources Layer -->
+  <rect x="50" y="70" width="1100" height="120" fill="#E3F2FD" stroke="#1976D2" stroke-width="2" rx="5"/>
+  <text x="100" y="95" font-size="16" font-weight="bold" fill="#1976D2">DATA SOURCES</text>
+  
+  <rect x="100" y="110" width="200" height="60" fill="#BBDEFB" stroke="#1976D2" stroke-width="2" rx="5"/>
+  <text x="200" y="135" font-size="14" font-weight="bold" text-anchor="middle">Electronic Health</text>
+  <text x="200" y="155" font-size="14" font-weight="bold" text-anchor="middle">Records (EHR)</text>
+  
+  <rect x="350" y="110" width="200" height="60" fill="#BBDEFB" stroke="#1976D2" stroke-width="2" rx="5"/>
+  <text x="450" y="135" font-size="14" font-weight="bold" text-anchor="middle">ICU Monitoring</text>
+  <text x="450" y="155" font-size="14" font-weight="bold" text-anchor="middle">Devices (Real-time)</text>
+  
+  <rect x="600" y="110" width="200" height="60" fill="#BBDEFB" stroke="#1976D2" stroke-width="2" rx="5"/>
+  <text x="700" y="135" font-size="14" font-weight="bold" text-anchor="middle">Historical Patient</text>
+  <text x="700" y="155" font-size="14" font-weight="bold" text-anchor="middle">Treatment Data</text>
+  
+  <rect x="850" y="110" width="200" height="60" fill="#BBDEFB" stroke="#1976D2" stroke-width="2" rx="5"/>
+  <text x="950" y="135" font-size="14" font-weight="bold" text-anchor="middle">Billing &amp;</text>
+  <text x="950" y="155" font-size="14" font-weight="bold" text-anchor="middle">Administrative Data</text>
+  
+  <!-- Ingestion Layer -->
+  <rect x="50" y="220" width="1100" height="100" fill="#FFF3E0" stroke="#F57C00" stroke-width="2" rx="5"/>
+  <text x="100" y="245" font-size="16" font-weight="bold" fill="#F57C00">INGESTION &amp; STREAMING</text>
+  
+  <rect x="150" y="260" width="200" height="45" fill="#FFE0B2" stroke="#F57C00" stroke-width="2" rx="5"/>
+  <text x="250" y="285" font-size="13" font-weight="bold" text-anchor="middle">Apache Kafka</text>
+  
+  <rect x="400" y="260" width="200" height="45" fill="#FFE0B2" stroke="#F57C00" stroke-width="2" rx="5"/>
+  <text x="500" y="285" font-size="13" font-weight="bold" text-anchor="middle">Stream Processing</text>
+  
+  <rect x="650" y="260" width="200" height="45" fill="#FFE0B2" stroke="#F57C00" stroke-width="2" rx="5"/>
+  <text x="750" y="285" font-size="13" font-weight="bold" text-anchor="middle">ETL Pipeline</text>
+  
+  <!-- Storage Layer -->
+  <rect x="50" y="350" width="1100" height="200" fill="#E8F5E9" stroke="#388E3C" stroke-width="2" rx="5"/>
+  <text x="100" y="375" font-size="16" font-weight="bold" fill="#388E3C">STORAGE SYSTEMS</text>
+  
+  <!-- OLTP -->
+  <rect x="100" y="390" width="230" height="140" fill="#C8E6C9" stroke="#388E3C" stroke-width="2" rx="5"/>
+  <text x="215" y="410" font-size="14" font-weight="bold" text-anchor="middle">OLTP Database</text>
+  <text x="215" y="430" font-size="12" text-anchor="middle">(PostgreSQL)</text>
+  <text x="215" y="455" font-size="11" text-anchor="middle">- Patient records</text>
+  <text x="215" y="475" font-size="11" text-anchor="middle">- Current vitals</text>
+  <text x="215" y="495" font-size="11" text-anchor="middle">- Appointments</text>
+  <text x="215" y="515" font-size="11" text-anchor="middle">ACID transactions</text>
+  
+  <!-- Data Warehouse -->
+  <rect x="360" y="390" width="230" height="140" fill="#C8E6C9" stroke="#388E3C" stroke-width="2" rx="5"/>
+  <text x="475" y="410" font-size="14" font-weight="bold" text-anchor="middle">Data Warehouse</text>
+  <text x="475" y="430" font-size="12" text-anchor="middle">(Snowflake)</text>
+  <text x="475" y="455" font-size="11" text-anchor="middle">- Historical data</text>
+  <text x="475" y="475" font-size="11" text-anchor="middle">- Aggregated metrics</text>
+  <text x="475" y="495" font-size="11" text-anchor="middle">- Monthly reports</text>
+  <text x="475" y="515" font-size="11" text-anchor="middle">Star schema</text>
+  
+  <!-- Vector Database -->
+  <rect x="620" y="390" width="230" height="140" fill="#C8E6C9" stroke="#388E3C" stroke-width="2" rx="5"/>
+  <text x="735" y="410" font-size="14" font-weight="bold" text-anchor="middle">Vector Database</text>
+  <text x="735" y="430" font-size="12" text-anchor="middle">(Pinecone)</text>
+  <text x="735" y="455" font-size="11" text-anchor="middle">- Patient embeddings</text>
+  <text x="735" y="475" font-size="11" text-anchor="middle">- Medical records</text>
+  <text x="735" y="495" font-size="11" text-anchor="middle">- NLP search</text>
+  <text x="735" y="515" font-size="11" text-anchor="middle">Semantic queries</text>
+  
+  <!-- Time-series DB -->
+  <rect x="880" y="390" width="230" height="140" fill="#C8E6C9" stroke="#388E3C" stroke-width="2" rx="5"/>
+  <text x="995" y="410" font-size="14" font-weight="bold" text-anchor="middle">Time-Series DB</text>
+  <text x="995" y="430" font-size="12" text-anchor="middle">(InfluxDB)</text>
+  <text x="995" y="455" font-size="11" text-anchor="middle">- ICU vitals stream</text>
+  <text x="995" y="475" font-size="11" text-anchor="middle">- Heart rate, BP</text>
+  <text x="995" y="495" font-size="11" text-anchor="middle">- Real-time alerts</text>
+  <text x="995" y="515" font-size="11" text-anchor="middle">High throughput</text>
+  
+  <!-- Processing &amp; AI Layer -->
+  <rect x="50" y="580" width="1100" height="100" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2" rx="5"/>
+  <text x="100" y="605" font-size="16" font-weight="bold" fill="#7B1FA2">PROCESSING &amp; AI</text>
+  
+  <rect x="150" y="620" width="230" height="45" fill="#E1BEE7" stroke="#7B1FA2" stroke-width="2" rx="5"/>
+  <text x="265" y="647" font-size="13" font-weight="bold" text-anchor="middle">ML Model (Readmission Risk)</text>
+  
+  <rect x="420" y="620" width="230" height="45" fill="#E1BEE7" stroke="#7B1FA2" stroke-width="2" rx="5"/>
+  <text x="535" y="647" font-size="13" font-weight="bold" text-anchor="middle">NLP Engine (LLM)</text>
+  
+  <rect x="690" y="620" width="230" height="45" fill="#E1BEE7" stroke="#7B1FA2" stroke-width="2" rx="5"/>
+  <text x="805" y="647" font-size="13" font-weight="bold" text-anchor="middle">Real-time Anomaly Detection</text>
+  
+  <!-- Application Layer -->
+  <rect x="50" y="710" width="1100" height="100" fill="#FCE4EC" stroke="#C2185B" stroke-width="2" rx="5"/>
+  <text x="100" y="735" font-size="16" font-weight="bold" fill="#C2185B">APPLICATIONS</text>
+  
+  <rect x="100" y="750" width="200" height="45" fill="#F8BBD0" stroke="#C2185B" stroke-width="2" rx="5"/>
+  <text x="200" y="777" font-size="13" font-weight="bold" text-anchor="middle">Doctor Dashboard</text>
+  
+  <rect x="350" y="750" width="200" height="45" fill="#F8BBD0" stroke="#C2185B" stroke-width="2" rx="5"/>
+  <text x="450" y="777" font-size="13" font-weight="bold" text-anchor="middle">NLP Query Interface</text>
+  
+  <rect x="600" y="750" width="200" height="45" fill="#F8BBD0" stroke="#C2185B" stroke-width="2" rx="5"/>
+  <text x="700" y="777" font-size="13" font-weight="bold" text-anchor="middle">Management Reports</text>
+  
+  <rect x="850" y="750" width="200" height="45" fill="#F8BBD0" stroke="#C2185B" stroke-width="2" rx="5"/>
+  <text x="950" y="777" font-size="13" font-weight="bold" text-anchor="middle">ICU Alert System</text>
+  
+  <!-- Data Flow Arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#666" />
+    </marker>
+  </defs>
+  
+  <!-- Source to Ingestion -->
+  <line x1="200" y1="170" x2="250" y2="260" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="450" y1="170" x2="450" y2="260" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="700" y1="170" x2="600" y2="260" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="950" y1="170" x2="750" y2="260" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Ingestion to Storage -->
+  <line x1="250" y1="305" x2="215" y2="390" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="500" y1="305" x2="475" y2="390" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="600" y1="305" x2="735" y2="390" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="750" y1="305" x2="995" y2="390" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Storage to Processing -->
+  <line x1="215" y1="530" x2="265" y2="620" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="475" y1="530" x2="475" y2="620" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="735" y1="530" x2="600" y2="620" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="995" y1="530" x2="850" y2="620" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Processing to Applications -->
+  <line x1="265" y1="665" x2="200" y2="750" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="535" y1="665" x2="450" y2="750" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="650" y1="665" x2="700" y2="750" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="805" y1="665" x2="950" y2="750" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Legend -->
+  <text x="50" y="870" font-size="12" font-weight="bold">Data Flow Direction: Top to Bottom</text>
+  <text x="600" y="870" font-size="12" font-weight="bold">OLTP = Operational | OLAP = Analytical</text>
+</svg>

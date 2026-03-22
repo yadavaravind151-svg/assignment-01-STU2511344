@@ -1,13 +1,3 @@
--- ====================================================================
--- DUCKDB QUERIES - DATA LAKE CROSS-FORMAT QUERYING
--- ====================================================================
--- These queries demonstrate DuckDB's ability to query multiple file
--- formats (CSV, JSON, Parquet) directly without loading into tables
--- ====================================================================
-
--- NOTE: Replace file paths with actual paths to your data files
--- For local execution: Use full paths like '/path/to/customers.csv'
--- For DuckDB CLI: Adjust paths based on your file locations
 
 -- ====================================================================
 -- Q1: List all customers along with the total number of orders they have placed
@@ -193,13 +183,3 @@ BUSINESS VALUE:
 */
 
 
--- ====================================================================
--- KEY DUCKDB DATA LAKE BENEFITS DEMONSTRATED:
--- ====================================================================
--- 1. NO ETL REQUIRED: Query files directly in their native formats
--- 2. SCHEMA-ON-READ: DuckDB infers schema automatically from data
--- 3. PERFORMANCE: Columnar Parquet + vectorized execution = fast queries
--- 4. SQL INTERFACE: Standard SQL works across all file formats
--- 5. ZERO SETUP: No database installation or data loading needed
--- 6. COST EFFICIENT: Process data where it lives (object storage)
--- ====================================================================

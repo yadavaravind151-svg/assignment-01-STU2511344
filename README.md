@@ -57,4 +57,3 @@ All 6 parts completed and uploaded:
 
 ## Submission
 
-This repository contains all required files for Assignment 01.

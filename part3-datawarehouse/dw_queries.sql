@@ -95,7 +95,7 @@ BUSINESS VALUE:
 -- ADDITIONAL ANALYTICAL QUERIES (BONUS)
 -- ====================================================================
 
---Q4: Product performance analysis
+-- Q4: Product performance analysis
 SELECT 
     p.product_name,
     p.category,

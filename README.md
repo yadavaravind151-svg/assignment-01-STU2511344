@@ -1,8 +1,13 @@
-assignment-01-<student-id>/
+# Assignment 01 - Database Normalization and SQL
+
+## Student ID: STU2511344
+
+## Repository Structure
+assignment-01-STU2511344/
 │
-├── README.md                          ← This file (do not modify)
+├── README.md
 │
-├── datasets/                          ← Provided datasets (do not modify)
+├── datasets/
 │   ├── orders_flat.csv
 │   ├── retail_transactions.csv
 │   ├── customers.csv
@@ -33,5 +38,16 @@ assignment-01-<student-id>/
 │   └── architecture_choice.md
 │
 └── part6-capstone/
-    ├── architecture_diagram.png
-    └── design_justification.md
+├── architecture_diagram.svg
+└── design_justification.md
+
+## Assignment Completion Status
+
+All 6 parts completed and uploaded:
+
+- Part 1: RDBMS - Normalization and SQL queries
+- Part 2: NoSQL - MongoDB operations
+- Part 3: Data Warehouse - Star schema design
+- Part 4: Vector Databases - Embeddings and similarity search
+- Part 5: Data Lake - DuckDB cross-format queries
+- Part 6: Capstone - Hospital AI system architecture

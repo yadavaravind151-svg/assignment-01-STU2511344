@@ -95,7 +95,7 @@ BUSINESS VALUE:
 -- ADDITIONAL ANALYTICAL QUERIES (BONUS)
 -- ====================================================================
 
--- BONUS Q4: Product performance analysis
+--Q4: Product performance analysis
 SELECT 
     p.product_name,
     p.category,
@@ -119,7 +119,7 @@ BUSINESS VALUE:
 */
 
 
--- BONUS Q5: Regional performance comparison
+-- Q5: Regional performance comparison
 SELECT 
     s.region,
     COUNT(DISTINCT s.store_key) AS store_count,
@@ -142,7 +142,7 @@ BUSINESS VALUE:
 */
 
 
--- BONUS Q6: Customer purchase behavior by day of week
+-- Q6: Customer purchase behavior by day of week
 SELECT 
     d.day_of_week,
     COUNT(f.transaction_id) AS transaction_count,
